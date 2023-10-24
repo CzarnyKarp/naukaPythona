@@ -1,0 +1,2 @@
+# naukaPythona
+nauka z lekcji
