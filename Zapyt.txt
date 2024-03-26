@@ -1,3 +1,9 @@
+#Jesli juz istnieje taka tabelko to najpierw to:
+
+DROP TABLE dane_uczniow
+
+#A jak nie macie to od razu tutaj:
+
 CREATE TABLE dane_uczniow (
   id_ucznia int(11) NOT NULL,
   imie_matki varchar(15) DEFAULT NULL,
