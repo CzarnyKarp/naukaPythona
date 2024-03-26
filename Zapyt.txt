@@ -7,11 +7,7 @@ CREATE TABLE dane_uczniow (
   adres varchar(50) DEFAULT NULL,
   nr_tel_rodzica varchar(9) DEFAULT NULL,
   mail_ucznia varchar(50) DEFAULT NULL,
-  nr_tel_ucznia varchar(9) DEFAULT NULL
+  nr_tel_ucznia varchar(9) DEFAULT NULL,
+	PRIMARY KEY (id_ucznia),
+	FOREIGN KEY (id_ucznia) REFERENCES uczniowie (id_ucznia)
 );
-
-ALTER TABLE dane_uczniow 
-	ADD PRIMARY KEY (id_ucznia);
-
-ALTER TABLE dane_uczniow
-FOREIGN KEY (id_ucznia) REFERENCES uczniowie (id_ucznia);
