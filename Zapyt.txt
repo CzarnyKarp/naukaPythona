@@ -1,0 +1,17 @@
+CREATE TABLE dane_uczniow (
+  id_ucznia int(11) NOT NULL,
+  imie_matki varchar(15) DEFAULT NULL,
+  imie_ojca varchar(15) DEFAULT NULL,
+  miejscowosc varchar(30) DEFAULT NULL,
+  kod_pocztowy varchar(6) DEFAULT NULL,
+  adres varchar(50) DEFAULT NULL,
+  nr_tel_rodzica varchar(9) DEFAULT NULL,
+  mail_ucznia varchar(50) DEFAULT NULL,
+  nr_tel_ucznia varchar(9) DEFAULT NULL
+);
+
+ALTER TABLE dane_uczniow 
+	ADD PRIMARY KEY (id_ucznia);
+
+ALTER TABLE dane_uczniow
+FOREIGN KEY (id_ucznia) REFERENCES uczniowie (id_ucznia);
